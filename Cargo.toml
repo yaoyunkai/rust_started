@@ -5,8 +5,9 @@ resolver = "2"
 members = [
     "hello_world",
     "guessing_game",
+    "part3_basic",
 ]
 
 default-members = [
-    "guessing_game",
+    "part3_basic",
 ]
