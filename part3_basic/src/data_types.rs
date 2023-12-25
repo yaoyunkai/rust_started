@@ -40,11 +40,12 @@ pub fn data_compute() {
 pub fn run_char() {
     let a: char = 'a';
     let chinese_ni: char = '\u{4f60}';
-
     let num: u32 = u32::from(chinese_ni);
-
     println!("the word is {chinese_ni}");
     decimal_to_hex(num);
+
+    let char2 = '\u{2615}';
+    println!("the word is {char2}");
 }
 
 
