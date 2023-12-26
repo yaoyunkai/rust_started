@@ -8,8 +8,9 @@ members = [
     "part3_basic",
     "part4_ownership",
     "part5_struct",
+    "part6_enum"
 ]
 
 default-members = [
-    "part5_struct",
+    "part6_enum",
 ]
