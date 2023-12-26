@@ -7,8 +7,9 @@ members = [
     "guessing_game",
     "part3_basic",
     "part4_ownership",
+    "part5_struct",
 ]
 
 default-members = [
-    "part4_ownership",
+    "part5_struct",
 ]

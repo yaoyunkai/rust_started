@@ -18,4 +18,21 @@ match 表达式
 
 隐藏 （Shadowing）
 
- 
+
+
+属性: #[allow(dead_code)] 
+     #[derive(Debug)]
+    
+        println!("the rect1 is {:?}", rect1);
+        println!("the rect1 is {:#?}", rect1);
+    
+
+Debug 是一个 trait
+
+
+宏
+    dbg!
+    println!
+
+Rust 有一个叫 自动引用和解引用（automatic referencing and dereferencing）的功能
+
