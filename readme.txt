@@ -22,6 +22,7 @@ match 表达式
 
 属性: #[allow(dead_code)] 
      #[derive(Debug)]
+     #[cfg(test)]
     
         println!("the rect1 is {:?}", rect1);
         println!("the rect1 is {:#?}", rect1);
