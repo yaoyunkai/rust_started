@@ -11,9 +11,13 @@ members = [
     "part6_enum",
     "part7_manage_project",
     "part8_collections",
-    
+    "part9_error_handle",
 ]
 
 default-members = [
-    "part8_collections",
+    "part9_error_handle",
 ]
+
+
+[profile.release]
+panic = 'abort'
