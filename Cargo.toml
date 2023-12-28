@@ -12,11 +12,11 @@ members = [
     "part7_manage_project",
     "part8_collections",
     "part9_error_handle",
-    "sip_hash",
+    "part10_generics"
 ]
 
 default-members = [
-    "sip_hash",
+    "part10_generics",
 ]
 
 
