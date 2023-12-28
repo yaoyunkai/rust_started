@@ -12,12 +12,15 @@ members = [
     "part7_manage_project",
     "part8_collections",
     "part9_error_handle",
+    "sip_hash",
 ]
 
 default-members = [
-    "part9_error_handle",
+    "sip_hash",
 ]
 
 
 [profile.release]
-panic = 'abort'
+lto = true
+panic = "abort"
+opt-level = 3
