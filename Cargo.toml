@@ -12,11 +12,12 @@ members = [
     "part7_manage_project",
     "part8_collections",
     "part9_error_handle",
-    "part10_generics"
+    "part10_generics",
+    "siphasher",
 ]
 
 default-members = [
-    "part10_generics",
+    "siphasher",
 ]
 
 
