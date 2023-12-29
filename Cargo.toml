@@ -17,7 +17,7 @@ members = [
 ]
 
 default-members = [
-    "siphasher",
+    "part10_generics",
 ]
 
 
