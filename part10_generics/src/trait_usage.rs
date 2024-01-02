@@ -87,7 +87,8 @@ fn some_function<T: Display + Clone, U: Clone + Debug>(t: &T, u: &U) -> i32 {
 
 #[allow(unused)]
 fn some_function1<T, U>(t: &T, u: &U) -> i32
-    where T: Display + Clone, U: Clone + Debug,
+    where T: Display + Clone,
+          U: Clone + Debug,
 {
     0
 }
