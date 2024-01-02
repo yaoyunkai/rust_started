@@ -8,4 +8,6 @@ fn main() {
 
     // trait_usage::run_trait();
     // hash_usage::run_hash();
+    
+    trait_usage::run_trait();
 }
