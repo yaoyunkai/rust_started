@@ -94,6 +94,25 @@ fn some_function1<T, U>(t: &T, u: &U) -> i32
 }
 
 
+/*
+
+返回 trait 类型
+
+
+ */
+
+#[allow(unused)]
+fn returns_summarizable() -> impl Summary {
+    Tweet {
+        username: String::from("horse_ebooks"),
+        content: String::from(
+            "of course, as you probably already know, people",
+        ),
+        reply: false,
+        retweet: false,
+    }
+}
+
 #[allow(unused)]
 pub fn run_trait() {
     let tweet = Tweet {
@@ -108,4 +127,7 @@ pub fn run_trait() {
     println!("1 new tweet: {}", tweet.summarize());
 
     notify(&tweet);
+
+    let tweet1 = returns_summarizable();
+    println!("2 new tweet: {}", tweet.summarize());
 }
