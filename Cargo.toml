@@ -14,10 +14,11 @@ members = [
     "part9_error_handle",
     "part10_generics",
     "siphasher",
+    "part11_adder",
 ]
 
 default-members = [
-    "part10_generics",
+    "part11_adder"
 ]
 
 
