@@ -15,10 +15,11 @@ members = [
     "part10_generics",
     "siphasher",
     "part11_adder",
+    "minigrep",
 ]
 
 default-members = [
-    "part11_adder"
+    "minigrep"
 ]
 
 
