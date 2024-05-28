@@ -102,6 +102,7 @@ pub fn runner3() {
 
 直接对应到函数获取参数的三种方式：不可变借用，可变借用和获取所有权。
 
+move 关键字: 强制闭包获取它用到的环境中值的所有权
 
 */
 pub fn runner4() {
@@ -128,4 +129,45 @@ pub fn runner4() {
         .join()
         .unwrap();
     // println!("after defining closure: {:?}", list);
+}
+
+/*
+FnOnce   : 一个会将捕获的值移出闭包体的闭包只实现 FnOnce trait，这是因为它只能被调用一次。
+FnMut    : 适用于不会将捕获的值移出闭包体的闭包，但它可能会修改被捕获的值。
+Fn       : 适用于既不将被捕获的值移出闭包体也不修改被捕获的值的闭包
+
+
+ */
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+pub fn runner5() {
+    let mut list = [
+        Rectangle { width: 10, height: 1 },
+        Rectangle { width: 3, height: 5 },
+        Rectangle { width: 7, height: 12 },
+    ];
+
+    list.sort_by_key(|r| r.width);
+    println!("{:#?}", list);
+}
+
+
+pub fn runner6() {
+    let mut list = [
+        Rectangle { width: 10, height: 1 },
+        Rectangle { width: 3, height: 5 },
+        Rectangle { width: 7, height: 12 },
+    ];
+
+    let mut num_sort_operations = 0;
+    list.sort_by_key(|r| {
+        num_sort_operations += 1;
+        r.width
+    });
+    println!("{:#?}, sorted in {num_sort_operations} operations", list);
 }
