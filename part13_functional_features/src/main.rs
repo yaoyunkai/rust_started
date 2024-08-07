@@ -10,9 +10,10 @@ fn main() {
     // closures::runner2();
     // closures::runner3();
     // runner4();
-    // 
     // runner5();
     // runner6()
 
-    runner1()
+    runner1();
+
+    println!("你好世界");
 }

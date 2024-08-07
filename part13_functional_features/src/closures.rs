@@ -23,7 +23,6 @@ enum ShirtColor {
     Blue,
 }
 
-
 struct Inventory {
     shirts: Vec<ShirtColor>,
 }
@@ -71,7 +70,6 @@ pub fn runner1() {
     );
 }
 
-
 pub fn runner2() {
     let expensive_closure = |num: u32| -> u32 {
         println!("calculating slowly...");
@@ -83,9 +81,11 @@ pub fn runner2() {
 }
 
 pub fn runner3() {
-    fn add_one_v1(x: u32) -> u32 { x + 1 }   // 函数定义
-    let add_one_v2 = |x: u32| -> u32 { x + 1 };  // 闭包定义
-    let add_one_v3 = |x| { x + 1 };
+    fn add_one_v1(x: u32) -> u32 {
+        x + 1
+    } // 函数定义
+    let add_one_v2 = |x: u32| -> u32 { x + 1 }; // 闭包定义
+    let add_one_v3 = |x| x + 1;
     let add_one_v4 = |x| x + 1;
 
     let result1 = add_one_v3(4);
@@ -95,7 +95,6 @@ pub fn runner3() {
 
     println!("result 2 is {result2}");
 }
-
 
 /*
 捕获引用或者移动所有权
@@ -147,21 +146,38 @@ struct Rectangle {
 
 pub fn runner5() {
     let mut list = [
-        Rectangle { width: 10, height: 1 },
-        Rectangle { width: 3, height: 5 },
-        Rectangle { width: 7, height: 12 },
+        Rectangle {
+            width: 10,
+            height: 1,
+        },
+        Rectangle {
+            width: 3,
+            height: 5,
+        },
+        Rectangle {
+            width: 7,
+            height: 12,
+        },
     ];
 
     list.sort_by_key(|r| r.width);
     println!("{:#?}", list);
 }
 
-
 pub fn runner6() {
     let mut list = [
-        Rectangle { width: 10, height: 1 },
-        Rectangle { width: 3, height: 5 },
-        Rectangle { width: 7, height: 12 },
+        Rectangle {
+            width: 10,
+            height: 1,
+        },
+        Rectangle {
+            width: 3,
+            height: 5,
+        },
+        Rectangle {
+            width: 7,
+            height: 12,
+        },
     ];
 
     let mut num_sort_operations = 0;
