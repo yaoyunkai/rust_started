@@ -1,4 +1,4 @@
-use crate::iterator::runner1;
+use iterator::runner1;
 
 mod closures;
 mod iterator;
