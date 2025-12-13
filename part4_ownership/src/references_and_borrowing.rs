@@ -45,39 +45,39 @@ fn change(some_string: &mut String) {
     some_string.push_str(", world");
 }
 
-pub fn test_reference_multi_times() {
-    /*
-    如果你有一个对该变量的可变引用，你就不能再创建对该变量的引用。
-     */
+// pub fn test_reference_multi_times() {
+//     /*
+//     如果你有一个对该变量的可变引用，你就不能再创建对该变量的引用。
+//      */
+// 
+//     let mut s = String::from("hello");
+// 
+//     let r1 = &mut s;
+//     let r2 = &mut s;
+// 
+//     println!("{}, {}", r1, r2);
+// 
+//     let mut s2 = String::from("hello");
+//     {
+//         let r3 = &mut s2;
+//         println!("{r3}");
+//     } // r1 在这里离开了作用域，所以我们完全可以创建一个新的引用
+//     let r4 = &mut s;
+//     println!(" {r4}");
+// }
 
-    let mut s = String::from("hello");
 
-    let r1 = &mut s;
-    let r2 = &mut s;
-
-    println!("{}, {}", r1, r2);
-
-    let mut s2 = String::from("hello");
-    {
-        let r3 = &mut s2;
-        println!("{r3}");
-    } // r1 在这里离开了作用域，所以我们完全可以创建一个新的引用
-    let r4 = &mut s;
-    println!(" {r4}");
-}
-
-
-pub fn test_reference_multi_times2() {
-    // 不能在拥有不可变引用的同时拥有可变引用。
-
-    let mut s = String::from("hello");
-
-    let r1 = &s;
-    let r2 = &s;
-    let r3 = &mut s;
-
-    println!("{}, {}, and {}", r1, r2, r3);
-}
+// pub fn test_reference_multi_times2() {
+//     // 不能在拥有不可变引用的同时拥有可变引用。
+// 
+//     let mut s = String::from("hello");
+// 
+//     let r1 = &s;
+//     let r2 = &s;
+//     let r3 = &mut s;
+// 
+//     println!("{}, {}, and {}", r1, r2, r3);
+// }
 
 pub fn test_reference_multi_times3() {
     /*
@@ -96,18 +96,18 @@ pub fn test_reference_multi_times3() {
     println!("{}", r3);
 }
 
-pub fn test_dangling_reference() {
-    let reference_to_nothing = dangle();
-    let s = no_dangle();
-}
-
-fn dangle() -> &String { // dangle 返回一个字符串的引用
-
-    let s = String::from("hello"); // s 是一个新字符串
-
-    &s // 返回字符串 s 的引用
-} // 这里 s 离开作用域并被丢弃。其内存被释放。
-
+// pub fn test_dangling_reference() {
+//     let reference_to_nothing = dangle();
+//     let s = no_dangle();
+// }
+// 
+// fn dangle() -> &String { // dangle 返回一个字符串的引用
+// 
+//     let s = String::from("hello"); // s 是一个新字符串
+// 
+//     &s // 返回字符串 s 的引用
+// } // 这里 s 离开作用域并被丢弃。其内存被释放。
+// 
 
 fn no_dangle() -> String {
     let s = String::from("hello");

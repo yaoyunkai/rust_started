@@ -29,26 +29,26 @@ fn first_word(s: &String) -> usize {
 }
 
 
-pub fn run_slice_2() {
-
-    // s2 它是一个指向二进制程序特定位置的 slice。
-    // 这也就是为什么字符串字面值是不可变的；&str 是一个不可变引用。
-    let s2 = "Hello, world!";
-    println!("the s2 is {s2}");
-
-    let s = String::from("hello world");
-
-    let hello = &s[0..5];
-    let world = &s[6..11];
-
-    let mut s = String::from("hello world");
-
-    let word = first_word2(&s);
-
-    s.clear(); // 错误！
-
-    println!("the first word is: {}", word);
-}
+// pub fn run_slice_2() {
+//
+//     // s2 它是一个指向二进制程序特定位置的 slice。
+//     // 这也就是为什么字符串字面值是不可变的；&str 是一个不可变引用。
+//     let s2 = "Hello, world!";
+//     println!("the s2 is {s2}");
+//
+//     let s = String::from("hello world");
+//
+//     let hello = &s[0..5];
+//     let world = &s[6..11];
+//
+//     let mut s = String::from("hello world");
+//
+//     let word = first_word2(&s);
+//
+//     s.clear(); // 错误！
+//
+//     println!("the first word is: {}", word);
+// }
 
 
 fn first_word2(s: &String) -> &str {
