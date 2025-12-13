@@ -16,4 +16,5 @@ fn main() {
     runner1();
 
     println!("你好世界");
+    println!("123456");
 }
