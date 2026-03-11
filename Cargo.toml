@@ -13,7 +13,6 @@ members = [
     "part8_collections",
     "part9_error_handle",
     "part10_generics",
-    "siphasher",
     "part11_adder",
     "minigrep",
     "part13_functional_features",
