@@ -8,7 +8,7 @@ struct User {
     name: String, // // String 不支持 Copy，因此 User 也无法支持 Copy
 }
 
-#[derive(Debug, Copy)]
+#[derive(Debug, Copy, Clone)]
 struct Point {
     x: i32,
     y: i32,

@@ -6,8 +6,6 @@
 
 */
 
-fn unused_func() {}
-
 fn variables_scope() {
     let num = 30u32;
     {
@@ -41,7 +39,6 @@ fn string_usage() {
     // print!("{s}");
     s = String::from("ahoy");
     println!("{s}, world!");
-
 }
 
 fn string_clone_usage() {
@@ -58,8 +55,45 @@ fn string_clone_usage() {
     println!("x = {x}, y = {y}");
 }
 
+fn ownership_with_function() {
+    let s = String::from("hello");
+    _takes_ownership(s);
+    // println!("s is {s}");
+
+    let x = 5;
+    _make_copy(x);
+    println!("x value is {x} after copy");
+}
+
+fn _takes_ownership(str: String) {
+    println!("{str}");
+}
+
+fn _make_copy(some_integer: i32) {
+    println!("{some_integer}")
+}
+
+fn ownership_with_return() {
+    let s1 = _gives_ownership();
+    let s2 = String::from("hello");
+    let s3 = _takes_and_gives_back(s2);
+
+    // println!("s1 = {s1}, s2 = {s2}, s3={s3}");
+    println!("s1 = {s1}, s3={s3}");
+}
+
+fn _gives_ownership() -> String {
+    let some_string = String::from("yours");
+    some_string // 返回 some_string 并将其移至调用函数
+}
+
+fn _takes_and_gives_back(a_string: String) -> String {
+    a_string // 返回 a_string 并移出给调用的函数
+}
+
 pub fn foo() {
     hello_world::print("变量的作用域", variables_scope);
     hello_world::print("字符串的使用", string_usage);
     hello_world::print("字符串clone方法的使用", string_clone_usage);
+    hello_world::print("所有权和函数的展示", ownership_with_function);
 }
