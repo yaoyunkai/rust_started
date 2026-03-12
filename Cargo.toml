@@ -6,12 +6,12 @@ members = [
     "hello_world",
     "guessing_game",
     "part3_basic",
+    "part4_ownership",
 ]
 
 default-members = [
-    "part3_basic"
+    "part4_ownership"
 ]
-
 
 [profile.release]
 lto = true

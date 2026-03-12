@@ -1,0 +1,3 @@
+cargo install cargo-show-asm
+
+cargo asm my_project::my_function
