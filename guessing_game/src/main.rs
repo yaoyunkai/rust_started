@@ -3,13 +3,10 @@ use std::io;
 
 use rand::Rng;
 
-use hello_world::print_hello_world;
-
 fn main() {
-    print_hello_world();
     println!("Guess the number!");
 
-    let secret_number = rand::thread_rng().gen_range(1..=100);
+    let secret_number: u32 = rand::thread_rng().gen_range(1..=100);
 
     loop {
         println!("Please input your guess.");

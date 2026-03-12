@@ -1,25 +1,15 @@
 [workspace]
 
-resolver = "2"
+resolver = "3"
 
 members = [
     "hello_world",
     "guessing_game",
     "part3_basic",
-    "part4_ownership",
-    "part5_struct",
-    "part6_enum",
-    "part7_manage_project",
-    "part8_collections",
-    "part9_error_handle",
-    "part10_generics",
-    "part11_adder",
-    "minigrep",
-    "part13_functional_features",
 ]
 
 default-members = [
-    "part13_functional_features"
+    "part3_basic"
 ]
 
 

@@ -1,3 +1,5 @@
+#![allow(unused)]
+
 /*
 两类数据类型子集：标量（scalar）和复合（compound）
 
@@ -48,7 +50,6 @@ pub fn run_char() {
     println!("the word is {char2}");
 }
 
-
 fn decimal_to_hex(decimal_number: u32) {
     // 使用format!宏将数字转换为十六进制字符串
     let hex_string = format!("{:X}", decimal_number);
@@ -76,9 +77,18 @@ pub fn run_tuple() {
 
 pub fn run_array() {
     let months = [
-        "January", "February", "March",
-        "April", "May", "June", "July",
-        "August", "September", "October", "November", "December"
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
     ];
 
     let a: [u32; 5] = [1, 2, 3, 4, 5];
