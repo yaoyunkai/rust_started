@@ -8,13 +8,15 @@ members = [
     "part3_basic",
     "part4_ownership",
     "part5_struct",
+    "part6_enum",
 ]
 
 default-members = [
-    "part5_struct"
+    "part6_enum"
 ]
 
 [profile.release]
 lto = true
 panic = "abort"
 opt-level = 3
+

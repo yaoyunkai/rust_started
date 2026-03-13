@@ -1,5 +1,9 @@
 mod definition_struct;
+mod example_struct;
 
 fn main() {
-    definition_struct::foo();
+    // println!("how to use struct");
+    // definition_struct::foo();
+
+    example_struct::foo();
 }
