@@ -13,6 +13,6 @@ pub fn print<F>(message: &str, func: F)
 where
     F: Fn(),
 {
-    println!("\n\n----- {message} -----");
+    println!("\n\n---------- {message} ----------");
     func()
 }
