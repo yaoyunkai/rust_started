@@ -9,10 +9,12 @@ members = [
     "part4_ownership",
     "part5_struct",
     "part6_enum",
+    "part7_packages",
+    "part8_collections",
 ]
 
 default-members = [
-    "part6_enum"
+    "part8_collections"
 ]
 
 [profile.release]
