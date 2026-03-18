@@ -12,10 +12,11 @@ members = [
     "part7_packages",
     "part8_collections",
     "part9_error_handle",
+    "part10_generics",
 ]
 
 default-members = [
-    "part9_error_handle"
+    "part10_generics"
 ]
 
 [profile.release]

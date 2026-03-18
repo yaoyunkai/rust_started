@@ -36,7 +36,7 @@ fn string_usage() {
 
     // 当你给一个已有的变量赋一个全新的值时，Rust 将会立即调用 drop 并释放原始值的内存。
     let mut s = String::from("hello");
-    // print!("{s}");
+    print!("{s}");
     s = String::from("ahoy");
     println!("{s}, world!");
 }
