@@ -21,3 +21,7 @@ impl Drawable for Circle { ... }
 impl Drawable for Square { ... }
 
 ```
+
+## 属性
+
+属性（attribute）是关于 Rust 代码片段的元数据；

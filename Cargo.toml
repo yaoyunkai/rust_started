@@ -13,6 +13,7 @@ members = [
     "part8_collections",
     "part9_error_handle",
     "part10_generics",
+    "part11_with_test",
 ]
 
 default-members = [
