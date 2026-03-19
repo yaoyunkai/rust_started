@@ -14,10 +14,12 @@ members = [
     "part9_error_handle",
     "part10_generics",
     "part11_with_test",
+    "part12_minigrep",
+    "part13_closures_iterators",
 ]
 
 default-members = [
-    "part10_generics"
+    "part13_closures_iterators"
 ]
 
 [profile.release]

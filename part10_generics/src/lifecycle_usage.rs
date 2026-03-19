@@ -9,6 +9,11 @@
 //     println!("r: {r}");
 // }
 
+struct ImportantExcerpt<'a, T> {
+    part: &'a str,
+    data: T,
+}
+
 fn lifecycle_with_function() {
     let string1 = String::from("abcde");
     let string2 = "xyz";
