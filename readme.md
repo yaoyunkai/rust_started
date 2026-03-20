@@ -1,5 +1,8 @@
 # Rust Started
 
+预导入 preclude : https://doc.rust-lang.org/std/prelude/index.html  
+标准库的 Prelude (std::prelude) 包含了 Rust 编程中最常用、最核心的项。
+
 ## 数据类型
 
 ![img.png](docs/img1.png)
@@ -25,3 +28,12 @@ impl Drawable for Square { ... }
 ## 属性
 
 属性（attribute）是关于 Rust 代码片段的元数据；
+
+## Others
+
+语法糖展开（Desugaring） 和 语言项（Lang Items）。
+
+`#[lang = "eq"]`
+
+Rust 编译器（rustc）内部硬编码了一张表，规定了“当遇到 `*` 操作符时，去寻找标记为 `#[lang = "deref"]` 的特型”。
+

@@ -5,5 +5,6 @@ mod iterators_usage;
 fn main() {
     // println!("Hello, world!");
     // closures_usage::foo();
-    fn_fnmut_fnonce::foo();
+    // fn_fnmut_fnonce::foo();
+    iterators_usage::foo();
 }

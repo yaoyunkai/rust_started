@@ -16,10 +16,11 @@ members = [
     "part11_with_test",
     "part12_minigrep",
     "part13_closures_iterators",
+    "part15_smart_pointer",
 ]
 
 default-members = [
-    "part13_closures_iterators"
+    "part15_smart_pointer"
 ]
 
 [profile.release]
@@ -27,3 +28,5 @@ lto = true
 panic = "abort"
 opt-level = 3
 
+[profile.dev]
+opt-level = 0
