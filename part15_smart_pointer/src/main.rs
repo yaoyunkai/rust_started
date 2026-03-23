@@ -10,15 +10,24 @@ Ref  RefMut   它们是通过 RefCell<T> 访问的。而 RefCell<T> 是一个在
 
 内部可变性（interior mutability）模式
 
+-------------------------------------------------------
+
+Rc<T> 允许相同数据有多个所有者
+Box<T> 和 RefCell<T> 则只有单一所有者。
+
+
 
 */
 mod use_box;
 mod use_drop_trait;
 mod use_rc;
+mod use_refcell;
 
 fn main() {
     // println!("Hello, world!");
     // use_box::foo();
     // use_drop_trait::foo();
-    use_rc::foo();
+    // use_rc::foo();
+
+    use_refcell::foo();
 }

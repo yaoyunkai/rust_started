@@ -1,0 +1,16 @@
+[package]
+name = "part17_async"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+trpl = "0.3.0"
+hello_world = { path = "../hello_world" }
+
+
+[lints.rust]
+# 忽略未使用的方法、结构体、枚举等
+dead_code = "allow"
+# 忽略未使用的变量
+unused_variables = "allow"
+

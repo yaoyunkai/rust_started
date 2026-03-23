@@ -17,10 +17,12 @@ members = [
     "part12_minigrep",
     "part13_closures_iterators",
     "part15_smart_pointer",
+    "part16_concurrency",
+    "part17_async",
 ]
 
 default-members = [
-    "part15_smart_pointer"
+    "part17_async"
 ]
 
 [profile.release]
