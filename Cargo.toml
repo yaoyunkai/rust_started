@@ -19,10 +19,11 @@ members = [
     "part15_smart_pointer",
     "part16_concurrency",
     "part17_async",
+    "part18_oop",
 ]
 
 default-members = [
-    "part17_async"
+    "part18_oop"
 ]
 
 [profile.release]
