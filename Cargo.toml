@@ -20,10 +20,12 @@ members = [
     "part16_concurrency",
     "part17_async",
     "part18_oop",
+    "part20_adv_features",
+    "http_server",
 ]
 
 default-members = [
-    "part18_oop"
+    "http_server"
 ]
 
 [profile.release]
