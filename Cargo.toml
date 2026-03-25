@@ -22,6 +22,7 @@ members = [
     "part18_oop",
     "part20_adv_features",
     "http_server",
+     "draft",
 ]
 
 default-members = [

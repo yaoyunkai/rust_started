@@ -1,6 +1,6 @@
-mod use_async;
+mod bst;
 
 fn main() {
     // println!("Hello, world!");
-    // use_async::foo();
+    bst::run_bst();
 }
